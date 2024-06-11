@@ -1,0 +1,28 @@
+execute store result score @s hb.health run data get entity @s Health 200
+execute store result score @s hb.max_health run attribute @s generic.max_health get
+scoreboard players operation @s hb.health /= @s hb.max_health
+
+execute if score @s hb.health matches 200.. run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥♥♥♥♥","color":"dark_red"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 190..199 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥♥♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 180..189 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥♥♥♥","color":"dark_red"},{"text":"♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 170..179 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 160..169 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥♥♥","color":"dark_red"},{"text":"♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 150..159 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 140..149 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥♥","color":"dark_red"},{"text":"♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 130..139 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 120..129 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥♥","color":"dark_red"},{"text":"♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 110..119 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 100..109 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥♥","color":"dark_red"},{"text":"♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 90..99 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 80..89 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥♥","color":"dark_red"},{"text":"♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 70..79 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 60..69 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥♥","color":"dark_red"},{"text":"♥♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 50..59 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 40..49 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥♥","color":"dark_red"},{"text":"♥♥♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 30..39 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 20..29 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [♥","color":"dark_red"},{"text":"♥♥♥♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 10..19 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [","color":"dark_red"},{"text":"♥","color":"red"},{"text":"♥♥♥♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+execute if score @s hb.health matches 0..9 run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" [","color":"dark_red"},{"text":"♥♥♥♥♥♥♥♥♥♥","color":"gray"},{"text":"]","color":"dark_red"}]
+
+execute if score @s hb.hurt_cooldown matches 1 run function display:reset with entity @s
+execute if score @s afk.timer matches 12000.. run scoreboard players display numberformat @s display.name_subtitle fixed [{"text":" <","color":"gray"},{"text":"AFK","color":"white"},{"text":">","color":"gray"}]

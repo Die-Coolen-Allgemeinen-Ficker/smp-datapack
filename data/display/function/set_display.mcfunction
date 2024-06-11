@@ -1,0 +1,1 @@
+$data modify storage display:displays "$(UUID)" set value {"string":[]}

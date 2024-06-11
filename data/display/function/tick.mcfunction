@@ -1,0 +1,1 @@
+scoreboard players set @a display.name_subtitle 0

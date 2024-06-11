@@ -1,0 +1,9 @@
+{
+    "values": [
+        "bcaf:load",
+        "afk-display:load",
+        "currency:load",
+        "display:load",
+        "health-bars:load"
+    ]
+}

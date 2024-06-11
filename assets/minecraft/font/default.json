@@ -1,0 +1,28 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "bcaf:font/bcafcoin.png",
+            "ascent": 7,
+            "chars": [
+                "\ue000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "bcaf:font/b.png",
+            "ascent": 7,
+            "chars": [
+                "\ue001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "bcaf:font/bcaf.png",
+            "ascent": 7,
+            "chars": [
+                "\ue002"
+            ]
+        }
+    ]
+}
