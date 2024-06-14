@@ -1,4 +1,3 @@
-#particle end_rod ~ ~ ~ 0 0 0 0 1 force
 scoreboard players add @s currency.playerFinder 1
 execute positioned ~ ~-1 ~ if entity @a[tag=currency.trading,distance=..1] run return 1
 execute positioned ~ ~-1 ~ if entity @a[tag=!currency.trading,distance=..1] as @p run return run function currency:trade/init
